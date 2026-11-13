@@ -1,0 +1,27 @@
+cat > .gitignore << 'EOF'
+# Environnement
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Données et logs (ne jamais versionner)
+data/
+logs/
+*.parquet
+*.csv
+*.log
+
+# Secrets
+.env
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+EOF
